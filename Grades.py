@@ -20,9 +20,9 @@ Create a main function
     for loop i in file
         append the obtained number as an int and store into grades
     
-    create a variable sum to sum the grades in the list
-    create a varaible leng  and setting it to the length of the list
-    create a variable avg to caclulate the average grade (sum / leng)
+    create a variable grades_sum to sum the grades in the list
+    create a varaible grades_leng  and setting it to the length of the list
+    create a variable grades_avg to caclulate the average grade (grades_sum / grades_leng)
 
     print "Number of grades: " , the length of the grades list
 
@@ -37,9 +37,10 @@ Create a calculate_percent_above_average function
         if(i is greater than avg)
             append i into grades_above_avg list
 
-    Create a variable grades_above_avg_sum and set it to sum of grades_above_avg list
-    Create a variable grades_above_avg and set it the the average (grades_above_avg_sum / leng)
+    Create a variable grades_above_avg_leng and set it to length of grades_above_avg list
+    Create a variable grades_above_avg and set it the the average ((grades_above_avg_leng / leng) * 100)
 
-    print the grades_above_avg
+    print the grades_above_avg rounded to nearest hundredth
 """
+
 
