@@ -43,3 +43,34 @@ Create a calculate_percent_above_average function
     print the grades_above_avg
 """
 
+#Code
+
+def main():
+    file = open("Final.txt", "r")
+    grades = []
+
+    for i in file:
+        grades.append(int(i))
+    
+    grades_sum = sum(grades)
+    grades_leng = len(grades)
+    grades_avg = (grades_sum/grades_leng)
+
+    print("Number of grades:", grades_leng)
+    print("Average grade:", grades_avg)
+
+    calculate_percent_above_average(grades, grades_avg, grades_leng)
+
+def calculate_percent_above_average(list, avg, leng):
+    grades_above_avg_list = []
+
+    for i in list:
+        if(i > avg):
+            grades_above_avg_list.append(i)
+    
+    grades_above_avg_leng = len(grades_above_avg_list)
+    grades_above_avg = ((grades_above_avg_leng / leng) * 100)
+
+    print("Percentage of grades above average:", round(grades_above_avg, 2) ,"%") 
+
+main()
